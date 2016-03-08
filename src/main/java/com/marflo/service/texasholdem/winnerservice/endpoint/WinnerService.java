@@ -3,9 +3,8 @@ package com.marflo.service.texasholdem.winnerservice.endpoint;
 import com.codahale.metrics.annotation.Timed;
 import com.marflo.service.texasholdem.winnerservice.api.WinnersRequest;
 import com.marflo.service.texasholdem.winnerservice.api.WinnersResponse;
-import com.marflo.service.texasholdem.winnerservice.logic.CalculateWinnerImpl;
+import com.marflo.service.texasholdem.winnerservice.logic.CalculateWinner;
 
-import javax.inject.Inject;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -17,8 +16,7 @@ import javax.ws.rs.core.Response;
 @Produces(MediaType.APPLICATION_JSON)
 public class WinnerService {
 
-    @Inject
-    CalculateWinnerImpl calculateWinner;
+    CalculateWinner calculateWinner = new CalculateWinner();
 
     @GET
     @Consumes(MediaType.APPLICATION_JSON)
