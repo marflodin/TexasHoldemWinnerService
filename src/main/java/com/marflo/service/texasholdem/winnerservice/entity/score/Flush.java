@@ -4,7 +4,7 @@ import com.marflo.service.texasholdem.winnerservice.entity.card.Suit;
 import com.marflo.service.texasholdem.winnerservice.entity.hand.DealerHand;
 import com.marflo.service.texasholdem.winnerservice.entity.hand.PlayerHand;
 
-public class Flush extends Score {
+public class Flush extends Score implements HandScore {
 
     public Flush(PlayerHand playerHand, DealerHand dealerHand) {
         super(playerHand, dealerHand);

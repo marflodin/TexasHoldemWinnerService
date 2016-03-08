@@ -15,4 +15,12 @@ public class PlayerResponse {
         this.playerId = playerId;
         this.potAmount = potAmount;
     }
+
+    public String getPlayerId() {
+        return playerId;
+    }
+
+    public BigDecimal getPotAmount() {
+        return potAmount;
+    }
 }

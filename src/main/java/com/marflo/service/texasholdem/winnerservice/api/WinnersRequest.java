@@ -14,6 +14,12 @@ public class WinnersRequest {
     @JsonProperty
     private List<Card> dealerCards;
 
+    public WinnersRequest(String handId, List<PlayerRequest> players, List<Card> dealerCards) {
+        this.handId = handId;
+        this.players = players;
+        this.dealerCards = dealerCards;
+    }
+
     public String getHandId() {
         return handId;
     }

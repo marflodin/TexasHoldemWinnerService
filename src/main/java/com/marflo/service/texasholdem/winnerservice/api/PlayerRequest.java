@@ -11,17 +11,22 @@ public class PlayerRequest {
     @JsonProperty
     private String playerId;
     @JsonProperty
-    private List<Card> playerCards;
+    private List<Card> cards;
     @JsonProperty
     private BigDecimal potAmount;
 
+    public PlayerRequest(String playerId, List<Card> cards, BigDecimal potAmount) {
+        this.playerId = playerId;
+        this.cards = cards;
+        this.potAmount = potAmount;
+    }
 
     public String getPlayerId() {
         return playerId;
     }
 
-    public List<Card> getPlayerCards() {
-        return playerCards;
+    public List<Card> getCards() {
+        return cards;
     }
 
     public BigDecimal getPotAmount() {

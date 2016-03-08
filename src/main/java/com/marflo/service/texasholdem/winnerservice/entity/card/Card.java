@@ -17,4 +17,9 @@ public class Card {
     public Suit getSuit() {
         return suit;
     }
+
+    //Multiply rank with 5 to give it higher priority than suit
+    public int getValue() {
+        return rank.getValue()*5 + suit.getValue();
+    }
 }

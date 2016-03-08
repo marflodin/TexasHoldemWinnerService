@@ -25,7 +25,7 @@ public abstract class Score {
     }
 
     public List<Card> getCardsMatchingRank(Rank rank) {
-        List<Card> cardsMatchingRank = new ArrayList<Card>();
+        List<Card> cardsMatchingRank = new ArrayList<>();
         cardsMatchingRank.addAll(getPlayerHand().getCardsMatchingRank(rank));
         cardsMatchingRank.addAll(getDealerHand().getCardsMatchingRank(rank));
         return cardsMatchingRank;
@@ -36,7 +36,7 @@ public abstract class Score {
     }
 
     public List<Card> getCardsMatchingSuit(Suit suit) {
-        List<Card> cardsMatchingSuit = new ArrayList<Card>();
+        List<Card> cardsMatchingSuit = new ArrayList<>();
         cardsMatchingSuit.addAll(getPlayerHand().getCardsMatchingSuit(suit));
         cardsMatchingSuit.addAll(getDealerHand().getCardsMatchingSuit(suit));
         return cardsMatchingSuit;
@@ -47,7 +47,7 @@ public abstract class Score {
     }
 
     public List<Card> getCardsMatchingRankAndSuit(Rank rank, Suit suit) {
-        List<Card> cardsMatchingRankAndSuit = new ArrayList<Card>();
+        List<Card> cardsMatchingRankAndSuit = new ArrayList<>();
         cardsMatchingRankAndSuit.addAll(getPlayerHand().getCardsMatchingRankAndSuit(rank, suit));
         cardsMatchingRankAndSuit.addAll(getDealerHand().getCardsMatchingRankAndSuit(rank, suit));
         return cardsMatchingRankAndSuit;

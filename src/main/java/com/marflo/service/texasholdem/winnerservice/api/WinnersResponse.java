@@ -12,4 +12,8 @@ public class WinnersResponse {
     public WinnersResponse(List<PlayerResponse> players) {
         this.players = players;
     }
+
+    public List<PlayerResponse> getPlayers() {
+        return players;
+    }
 }
