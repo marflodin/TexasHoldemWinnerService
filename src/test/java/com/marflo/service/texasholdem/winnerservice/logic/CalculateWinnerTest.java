@@ -32,6 +32,8 @@ public class CalculateWinnerTest {
             add(new Card(Suit.HEARTS, Rank.DEUCE));
             add(new Card(Suit.HEARTS, Rank.THREE));
             add(new Card(Suit.HEARTS, Rank.FOUR));
+            add(new Card(Suit.SPADES, Rank.EIGHT));
+            add(new Card(Suit.SPADES, Rank.ACE));
         }};
     }
 
@@ -39,7 +41,7 @@ public class CalculateWinnerTest {
     public void whenOnlyOnePlayerReturnPlayerAsWinner() {
         List<Card> playerCards = new ArrayList<Card>() {{
             add(new Card(Suit.DIAMONDS, Rank.SEVEN));
-            add(new Card(Suit.DIAMONDS, Rank.JACK));
+            add(new Card(Suit.DIAMONDS, Rank.DEUCE));
         }};
         BigDecimal playerPotAmount = new BigDecimal(20);
         String playerId = "player1";
